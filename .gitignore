@@ -1,3 +1,7 @@
+##  MAC
+.DS_Store
+## jupyter notebook
+*.ipynb_checkpoints
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
