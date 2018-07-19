@@ -1,7 +1,7 @@
 # 目录 
 
 * [1 绪论](#1-绪论)
-	* [1.1 No Free Lunch Theorem](11-no-free-lunch theorem) 
+	* [1.1 No Free Lunch Theorem](11-no-free-lunch-theorem) 
 * [2 模型评估与选择](#2-模型评估与选择)
 	* [2.1 评估方法](#21-评估方法)
 	* [2.2 最终模型](#22-最终模型)
@@ -16,11 +16,14 @@
 # 2 模型评估与选择
 ## 2.1 评估方法
 * 留出法（hold-out）
+ 
    常见做法是大约 2/3~4/5 的样本用于训练，剩余样本用于测试。
 * 交叉验证法（cross validation）
+
 	k 折交叉验证通常要随机使用不同划分重复 p 次，常见的有 10 次 10 折交叉验证。
 	* 留一法（LOO, LEVAE ONE OUT）
 * 自助法（bootstrapping）
+
 	数据集较小时很有用，又称包外估计（out of bag estimate），但是改变了初始数据集的分布，可能引入估计偏差，在数据量足够时，留出法和交叉验证法更常用。
 	
 ## 2.2 最终模型
