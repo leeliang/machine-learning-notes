@@ -37,13 +37,15 @@
 
 查准率为在预测为正例的结果中有多少是真正的正例，查全率为真实结果为正例的样本中有多少预测结果为正例。
 
-$P = \frac{TP}{TP+FP}, R = \frac{TP}{TP+FN}$
+<a href="https://www.codecogs.com/eqnedit.php?latex=P&space;=&space;\frac{TP}{TP&plus;FP},&space;R&space;=&space;\frac{TP}{TP&plus;FN}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P&space;=&space;\frac{TP}{TP&plus;FP},&space;R&space;=&space;\frac{TP}{TP&plus;FN}" title="P = \frac{TP}{TP+FP}, R = \frac{TP}{TP+FN}" /></a>
 
 F1 是基于查准率和查全率的调和平均数定义的，用于综合考虑查准率和查全率的度量。若对查准率和查全率的重视程度不同，则采用更一般的加权调和平均。
 
-$ F_\beta = \frac{1}{1+\beta^2} (\frac{1}){P}+\frac{\beta^2}{R}$
+ F_\beta = \frac{1}{1+\beta^2} (\frac{1}){P}+\frac{\beta^2}{R})
 
 $\beta = 1$ 时退化为 F1，$\beta<1$ 时查全率影响更大，反之亦然。 
+
+
 
 我们可根据学习器的结果对样例进行排序，排在最前面的是最可能是正例的样本，按此顺序逐个把样本作为正例进行预测，则得到了查准率和查全率的序列，以查准率为纵轴，查全率为横轴的图为P-R曲线。以 True Positive Rate 为纵轴，False Positve Rate 为横轴的图为 ROC 曲线。TPR 是真实情况为正例中有多少真正例， FPR 是真实情况为反例的样本中假正例。
 
