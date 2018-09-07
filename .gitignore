@@ -3,6 +3,7 @@
 ## jupyter notebook
 *.ipynb_checkpoints
 ## Core latex/pdflatex auxiliary files:
+*latex
 *.aux
 *.lof
 *.log
